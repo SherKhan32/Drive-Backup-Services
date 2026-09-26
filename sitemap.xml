@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- Homepage -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.00</priority>
+    </url>
+    <!-- Products Catalog -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/products</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <!-- Petrol Pump Management System -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/petrol-pump</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <!-- Installment Management System -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/features</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <!-- Auto Parts & Decoration Inventory System -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/auto-parts</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <!-- Google Drive Cloud Sync Engine -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/cloud-sync</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <!-- Download Desktop Applications -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/download</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <!-- Interactive Calculator -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/calculator</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <!-- Invoicing & Receipts -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/invoicing</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <!-- Contact & Developer Services -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/contact</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <!-- Google OAuth Verified Privacy Policy -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/privacy</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <!-- Terms of Service -->
+    <url>
+        <loc>https://SherKhan32.github.io/installment-management-system/terms</loc>
+        <lastmod>2026-09-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
+</urlset>
