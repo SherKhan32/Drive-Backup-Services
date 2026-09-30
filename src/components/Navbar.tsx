@@ -51,14 +51,14 @@ export const Navbar: React.FC = () => {
                         <div>
                             <div className="flex items-center gap-2">
                                 <span className="text-lg font-extrabold tracking-tight text-white group-hover:text-emerald-300 transition-colors">
-                                    Installment<span className="text-emerald-400">Manager</span>
+                                    Drive Backup<span className="text-emerald-400"> Services</span>
                                 </span>
                                 <span className="hidden sm:inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                                     <ShieldCheck className="w-3 h-3" /> v2.4 Pro
                                 </span>
                             </div>
                             <p className="text-[11px] text-slate-400 font-medium tracking-wide">
-                                Enterprise Offline & Cloud Sync
+                                Drive Backup Service • Installment Manager • Offline & Cloud Sync
                             </p>
                         </div>
                     </Link>

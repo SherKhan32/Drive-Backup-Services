@@ -25,10 +25,15 @@ export const Home: React.FC = () => {
                     {/* Badge */}
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-400 text-xs font-semibold shadow-inner shadow-emerald-950/50 animate-pulse-slow">
                         <span className="flex h-2 w-2 rounded-full bg-emerald-400"></span>
-                        <span>Installment Management System 2026 Edition</span>
+                        <span>Drive Backup Services • 2026 Edition</span>
                         <span className="text-slate-500">•</span>
                         <span className="text-slate-300">Google OAuth Verified</span>
                     </div>
+
+                    {/* App identity + purpose (Google OAuth consent-screen match) */}
+                    <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-emerald-400/90">
+                        Drive Backup Service — Offline Desktop Suite with Google Drive Backup
+                    </p>
 
                     {/* Main Headline */}
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15]">
@@ -38,9 +43,12 @@ export const Home: React.FC = () => {
 
                     {/* Sub-headline */}
                     <p className="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-                        Blazing-fast offline-first desktop solution for retail installments, leasing
-                        companies, and micro-financiers. Featuring automated SQLite ledgers, 1-click
-                        Google Drive cloud backups, and thermal ESC/POS receipt printing.
+                        <b className="text-white">Drive Backup Service</b> by Drive Backup
+                        Services is an offline-first desktop software suite — including our
+                        flagship Installment Management System — for retail installments,
+                        leasing companies, and micro-financiers. Featuring automated SQLite
+                        ledgers, 1-click Google Drive cloud backups, and thermal ESC/POS
+                        receipt printing.
                     </p>
 
                     {/* CTA Action Buttons */}
@@ -118,6 +126,35 @@ export const Home: React.FC = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            {/* App purpose statement (required for Google OAuth verification) */}
+            <section id="about" className="relative py-16 border-t border-slate-900">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                        What is Drive Backup Service?
+                    </h2>
+                    <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                        <b className="text-white">Drive Backup Service</b> (by Drive Backup
+                        Services) develops offline-first Windows desktop applications — Petrol
+                        Pump Management, Installment Management, and Auto Parts &amp;
+                        Decoration Inventory — with an optional 1-click encrypted backup to
+                        the user's <b>own Google Drive</b> using the restricted{" "}
+                        <code className="text-emerald-300 font-mono text-xs">
+                            https://www.googleapis.com/auth/drive.file
+                        </code>{" "}
+                        scope. No login is required to browse this site. To learn exactly
+                        what data the desktop app accesses and why, read our{" "}
+                        <Link to="/privacy" className="text-emerald-400 underline font-semibold">
+                            Privacy Policy
+                        </Link>{" "}
+                        and{" "}
+                        <Link to="/terms" className="text-emerald-400 underline font-semibold">
+                            Terms of Service
+                        </Link>
+                        .
+                    </p>
                 </div>
             </section>
 

@@ -22,9 +22,10 @@ export const PrivacyPolicy: React.FC = () => {
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
                         Privacy Policy
                     </h1>
-                    <p className="text-sm text-slate-400 mt-2 flex items-center gap-4">
+                    <p className="text-sm text-slate-400 mt-2 flex flex-wrap items-center gap-x-4 gap-y-1">
                         <span>
-                            <b>Application:</b> Installment Management System
+                            <b>Application:</b> Drive Backup Service (by Drive Backup Services —
+                            includes Installment Management System desktop app)
                         </span>
                         <span>•</span>
                         <span>
@@ -42,8 +43,9 @@ export const PrivacyPolicy: React.FC = () => {
                             <span>Core Privacy Commitment</span>
                         </h2>
                         <p className="text-slate-300 leading-relaxed">
-                            <b>Installment Management System</b> is designed with an{" "}
-                            <b>offline-first architecture</b>. We believe your business and
+                            <b>Drive Backup Service</b> by <b>Drive Backup Services</b>{" "}
+                            (including the Installment Management System desktop app) is
+                            designed with an <b>offline-first architecture</b>. We believe your business and
                             financial records belong solely to you. All loan accounts, customer
                             data, and transaction ledgers are stored locally on your device in an
                             encrypted SQLite database.
@@ -70,7 +72,7 @@ export const PrivacyPolicy: React.FC = () => {
                         </div>
 
                         <p className="text-slate-200">
-                            Installment Management System's use and transfer to any other app of
+                            Drive Backup Service's use and transfer to any other app of
                             information received from Google APIs will adhere to the{" "}
                             <a
                                 href="https://developers.google.com/terms/api-services-user-data-policy"

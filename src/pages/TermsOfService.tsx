@@ -22,9 +22,10 @@ export const TermsOfService: React.FC = () => {
                     <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
                         Terms of Service
                     </h1>
-                    <p className="text-sm text-slate-400 mt-2 flex items-center gap-4">
+                    <p className="text-sm text-slate-400 mt-2 flex flex-wrap items-center gap-x-4 gap-y-1">
                         <span>
-                            <b>Application:</b> Installment Management System Desktop
+                            <b>Application:</b> Drive Backup Service (Drive Backup Services
+                            Desktop Suite)
                         </span>
                         <span>•</span>
                         <span>

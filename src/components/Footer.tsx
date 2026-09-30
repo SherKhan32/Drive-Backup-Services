@@ -93,14 +93,16 @@ export const Footer: React.FC = () => {
                                 </div>
                             </div>
                             <span className="text-lg font-bold text-white tracking-tight">
-                                Installment<span className="text-emerald-400">Manager</span>
+                                Drive Backup<span className="text-emerald-400"> Services</span>
                             </span>
                         </Link>
 
                         <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
-                            The premier offline-first desktop management software designed for
-                            micro-finance, consumer electronics retail, real-estate installments,
-                            and auto financing businesses.
+                            <b className="text-slate-200">Drive Backup Service</b> by Drive Backup
+                            Services — the premier offline-first desktop management software
+                            suite for micro-finance, consumer electronics retail, real-estate
+                            installments, and auto financing businesses, with 1-click encrypted
+                            Google Drive cloud backups.
                         </p>
 
                         <div className="pt-2">
@@ -245,7 +247,7 @@ export const Footer: React.FC = () => {
                         <span>Google API Services User Data Policy Compliance Statement:</span>
                     </div>
                     <p>
-                        Installment Management System's use and transfer to any other app of
+                        Drive Backup Service's use and transfer to any other app of
                         information received from Google APIs will adhere to the{" "}
                         <a
                             href="https://developers.google.com/terms/api-services-user-data-policy"
@@ -268,8 +270,8 @@ export const Footer: React.FC = () => {
                 {/* Copyright and Bottom Row */}
                 <div className="mt-8 pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
                     <p>
-                        © {new Date().getFullYear()} Installment Management System. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Drive Backup Services (Drive Backup Service).
+                        All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">
                         <Link to="/privacy" className="hover:text-slate-400 transition-colors">

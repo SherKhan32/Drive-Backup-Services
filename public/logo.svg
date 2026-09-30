@@ -1,10 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <rect width="48" height="48" rx="12" fill="#0f172a"/>
-  <rect x="1" y="1" width="46" height="46" rx="11" stroke="#34d399" stroke-opacity="0.3" stroke-width="2"/>
-  <path d="M14 16H34" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14 24H28" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14 32H22" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="33" cy="29" r="6" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="2"/>
-  <path d="M31 29L32.5 30.5L35.5 27.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="Drive Backup Services logo">
+  <defs>
+    <linearGradient id="dbs-bg" x1="6" y1="4" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d2b23"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="dbs-accent" x1="12" y1="30" x2="36" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="url(#dbs-bg)"/>
+  <rect x="2.75" y="2.75" width="42.5" height="42.5" rx="11" stroke="#34d399" stroke-opacity="0.45" stroke-width="1.5"/>
+  <!-- Distinct "vault + up-arrow" mark: stacked base bars forming a D-step, cloud arc, upload arrow -->
+  <path d="M12 31.5h13.5" stroke="url(#dbs-accent)" stroke-width="3" stroke-linecap="round"/>
+  <path d="M12 36.5h9" stroke="#0e9f7a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M13.5 26.5h21v3.2a5.4 5.4 0 0 1-2.2 4.35" stroke="#34d399" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M34.5 26.5h-4.2a6.6 6.6 0 0 0-12.9 1.8" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M26 11v10M21.8 15.2 26 11l4.2 4.2" stroke="#f8fafc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="35.5" cy="12.5" r="3.1" fill="#34d399"/>
+  <path d="M34.2 12.5l.95.95 1.85-1.9" stroke="#06281f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-
