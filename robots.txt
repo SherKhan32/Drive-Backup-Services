@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://SherKhan32.github.io/installment-management-system/sitemap.xml
+Sitemap: https://sherkhan32.github.io/installment-management-system/sitemap.xml
