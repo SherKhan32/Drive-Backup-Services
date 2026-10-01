@@ -1,84 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Drive Backup Service by Drive Backup Services</title>
-  <meta name="description" content="Privacy Policy for Drive Backup Service by Drive Backup Services: how our offline-first desktop apps (Installment Management System, Petrol Pump Management, Auto Parts Inventory) use the Google Drive API drive.file scope solely for user-initiated encrypted backups. No data selling, no tracking." />
-  <link rel="canonical" href="https://sherkhan32.github.io/installment-management-system/privacy.html" />
-  <link rel="icon" type="image/svg+xml" href="./logo.svg" />
-  <style>
-    :root { color-scheme: dark; }
-    body { margin: 0; background: #020617; color: #e2e8f0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.7; }
-    main { max-width: 860px; margin: 0 auto; padding: 40px 20px 64px; }
-    a { color: #34d399; }
-    h1 { color: #fff; font-size: 2rem; margin: 0 0 8px; }
-    h2 { color: #fff; font-size: 1.2rem; margin-top: 2rem; }
-    .meta { color: #94a3b8; font-size: .9rem; }
-    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 18px 20px; margin: 18px 0; }
-    code { background: #020617; color: #6ee7b7; padding: 2px 6px; border-radius: 6px; font-size: .85em; word-break: break-all; }
-    nav.top { background: #020617; border-bottom: 1px solid #1e293b; padding: 12px 20px; font-size: .9rem; }
-    nav.top a { margin-right: 16px; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | Drive Backup Services</title>
+    <meta name="description" content="Privacy Policy and Google API Services User Data Policy Compliance for Drive Backup Services." />
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1e293b; background: #f8fafc; padding: 24px; max-width: 860px; margin: 0 auto; }
+        .card { background: #ffffff; border-radius: 12px; padding: 32px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        h1 { font-size: 2rem; color: #0f172a; margin-top: 0; }
+        h2 { font-size: 1.25rem; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 28px; }
+        .highlight { background: #ecfdf5; border-left: 4px solid #10b981; padding: 16px; border-radius: 4px; margin: 20px 0; }
+        code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; color: #0f766e; }
+        a { color: #059669; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
 <body>
-  <nav class="top">
-    <a href="./">Drive Backup Services — Home</a>
-    <a href="./privacy.html">Privacy Policy</a>
-    <a href="./terms.html">Terms of Service</a>
-  </nav>
-  <main>
-    <h1>Privacy Policy</h1>
-    <p class="meta"><b>Application:</b> Drive Backup Service (by Drive Backup Services — includes the Installment Management System desktop app) &nbsp;•&nbsp; <b>Last Updated:</b> September 30, 2026</p>
-
     <div class="card">
-      <h2 style="margin-top:0">Core Privacy Commitment</h2>
-      <p><b>Drive Backup Service</b> by <b>Drive Backup Services</b> is an <b>offline-first desktop software suite</b> (Petrol Pump Management, Installment Management, Auto Parts &amp; Decoration Inventory). All loan accounts, customer records, and transaction ledgers are stored locally on your own device in an encrypted SQLite database. <b>We operate no backend servers that collect, store, sell, or analyze your business data or Google account information.</b> No login is required to browse this website.</p>
+        <h1>Privacy Policy</h1>
+        <p><strong>Application:</strong> Drive Backup Services (Drive Backup Service)</p>
+        <p><strong>Developer:</strong> Drive Backup Services Engineering Team</p>
+        <p><strong>Effective Date:</strong> October 1, 2026</p>
+
+        <div class="highlight">
+            <h3>Google API Limited Use Disclosure</h3>
+            <p><strong>Drive Backup Services</strong>'s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements.</p>
+            <p>Specifically, the application requests the following restricted OAuth scope:</p>
+            <code>https://www.googleapis.com/auth/drive.file</code>
+            <p>This scope grants access <strong>only</strong> to the files and folders created or opened by Drive Backup Services. It does not access any other personal files, documents, or photos in your Google Drive.</p>
+        </div>
+
+        <h2>1. 100% Offline-First Architecture</h2>
+        <p>Drive Backup Services is designed with an offline-first architecture. All core business records (retail sales, accounts, inventories, transaction ledgers) are stored strictly locally on your machine in an offline SQLite database. We do not operate external web servers to collect, harvest, monetize, or track your business transactions.</p>
+
+        <h2>2. Purpose of Google Drive Integration</h2>
+        <p>The Google Drive integration serves one explicit purpose: allowing users to safely backup and restore their local desktop database to their own private Google Drive storage with 1 click or on a scheduled basis. Your backup archives are encrypted locally with AES-256 before being uploaded to your Drive.</p>
+
+        <h2>3. Data Protection and Zero Third-Party Sharing</h2>
+        <p>Your authentication tokens are stored securely in your operating system's local encrypted credentials vault. We never share, sell, distribute, or transmit any Google user data or business records to advertisers or third parties.</p>
+
+        <h2>4. User Control & Revocation</h2>
+        <p>You can disconnect your Google account at any time directly within the desktop application settings, or revoke access remotely through your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account Security Settings</a>.</p>
+
+        <h2>5. Developer Contact</h2>
+        <p>If you have any questions about this Privacy Policy or data security practices, contact us at:</p>
+        <p>Email: <a href="mailto:support@drivebackupservices.com">support@drivebackupservices.com</a> / <a href="mailto:sherkhan.dev@gmail.com">sherkhan.dev@gmail.com</a></p>
+        <p><a href="./">← Return to Main Website</a></p>
     </div>
-
-    <h2>Google API Services User Data Policy — Limited Use Disclosure</h2>
-    <p>Drive Backup Service's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noreferrer">Google API Services User Data Policy</a>, including the <b>Limited Use</b> requirements.</p>
-    <div class="card">
-      <p><b>OAuth scope requested:</b><br /><code>https://www.googleapis.com/auth/drive.file</code></p>
-      <p>This restricted scope grants access <b>only to files created or opened by Drive Backup Service itself</b>. The app <b>cannot</b> view, read, edit, or delete your photos, emails, Google Docs, or any other files in your Google Drive.</p>
-    </div>
-
-    <h2>1. How we access, use, and store Google user data</h2>
-    <ul>
-      <li><b>Purpose:</b> the sole purpose of Google Drive access is to save encrypted backup archives of your local database into <b>your own Google Drive</b>, only when you click backup/sync or enable scheduled backups.</li>
-      <li><b>Direct client-to-Google communication:</b> OAuth 2.0 authorization happens in your own browser directly with Google. No proxy or intermediary server is used, and tokens never pass through our systems (we have none).</li>
-      <li><b>Local token storage:</b> OAuth access/refresh tokens stay in your OS credential vault (Windows Credential Manager, macOS Keychain, Linux Secret Service).</li>
-      <li><b>Local encryption before upload:</b> backups are encrypted with AES-256-GCM on your device before upload; only you hold the key.</li>
-      <li><b>What we do NOT access:</b> Gmail, Contacts, Calendar, Photos, or any Drive files not created by this app.</li>
-    </ul>
-
-    <h2>2. Data collection, sharing, and selling</h2>
-    <ul>
-      <li>We do <b>NOT</b> collect personal data through this website (no accounts, no analytics fingerprints, no advertising trackers).</li>
-      <li>We do <b>NOT</b> sell Google user data or business ledger data to anyone.</li>
-      <li>We do <b>NOT</b> use Google user data for advertising, retargeting, credit profiling, or to train generalized AI/ML models.</li>
-      <li>We do <b>NOT</b> transfer Google user data to third parties except to Google's own Drive API endpoints as strictly needed to store the backup file you requested.</li>
-      <li>No human at our organization can access your database or Drive files — there is no server side.</li>
-    </ul>
-
-    <h2>3. Data retention and deletion (user control)</h2>
-    <ul>
-      <li><b>Local data:</b> retained on your device until you delete the app/database file (<code>installment_manager.db</code>) yourself.</li>
-      <li><b>Cloud backups:</b> retained in your Google Drive folder (<code>/InstallmentBackups/</code>) until you delete them in Google Drive.</li>
-      <li><b>Revoking access:</b> disconnect inside the desktop app Settings at any time, or revoke at <a href="https://myaccount.google.com/permissions" rel="noreferrer">Google Account Security Permissions</a>. Revocation immediately stops future uploads; it does not delete files already in your Drive (you delete those yourself).</li>
-    </ul>
-
-    <h2>4. Information processed locally by the software</h2>
-    <p>Only to run its offline features on your device: customer name/CNIC/phone/address/guarantor details, installment contracts (principal, markup, schedule, down payment), ledger transactions (receipt numbers, collections, penalties), and receipt layouts. None of this leaves your device except inside the encrypted backup file you choose to upload to your own Drive.</p>
-
-    <h2>5. Contact</h2>
-    <div class="card">
-      <p>Email: <a href="mailto:privacy@installmentmanager.app">privacy@installmentmanager.app</a><br />
-      Support: <a href="mailto:support@installmentmanager.app">support@installmentmanager.app</a><br />
-      Website: <a href="./">Drive Backup Services — Home</a></p>
-    </div>
-
-    <p class="meta">This policy is published at both <a href="./privacy.html">privacy.html</a> and the in-app route (/#/privacy) so automated reviewers can read it with or without JavaScript.</p>
-  </main>
 </body>
 </html>

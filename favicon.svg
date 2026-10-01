@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <rect width="48" height="48" rx="12" fill="#0f172a"/>
-  <rect x="1" y="1" width="46" height="46" rx="11" stroke="#34d399" stroke-opacity="0.3" stroke-width="2"/>
-  <path d="M14 16H34" stroke="#34d399" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14 24H28" stroke="#10b981" stroke-width="3" stroke-linecap="round"/>
-  <path d="M14 32H22" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="33" cy="29" r="6" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="2"/>
-  <path d="M31 29L32.5 30.5L35.5 27.5" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <rect width="32" height="32" rx="8" fill="#090d16" />
+  <rect x="1" y="1" width="30" height="30" rx="7" stroke="#10b981" stroke-width="2" />
+  <!-- Cloud -->
+  <path d="M12 19 C9.8 19 8 17.2 8 15 C8 13.1 9.4 11.5 11.3 11.1 C12.1 8.7 14.4 7 17 7 C19.9 7 22.3 9.1 22.8 11.9 C24.6 12.2 26 13.7 26 15.5 C26 17.4 24.4 19 22.5 19 Z" fill="#ffffff" fill-opacity="0.9" />
+  <!-- Upward sync arrow -->
+  <path d="M17 11 L21 15 L18.5 15 L18.5 22 L15.5 22 L15.5 15 L13 15 Z" fill="#10b981" />
 </svg>
