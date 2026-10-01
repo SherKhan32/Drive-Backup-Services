@@ -5,21 +5,21 @@
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <!-- Application Home Page -->
     <url>
-        <loc>https://sherkhan32.github.io/installment-management-system/</loc>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <!-- Application Privacy Policy -->
     <url>
-        <loc>https://sherkhan32.github.io/installment-management-system/privacy.html</loc>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/privacy.html</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.90</priority>
     </url>
     <!-- Application Terms of Service -->
     <url>
-        <loc>https://sherkhan32.github.io/installment-management-system/terms.html</loc>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/terms.html</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
