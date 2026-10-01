@@ -1,23 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { ShieldCheck, Menu, X, Cloud, FileText, Scale } from "lucide-react";
 
 export const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
         };
-        window.addEventListener("scroll", handleScroll);
+        handleScroll();
+        window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
-
-    useEffect(() => {
-        setIsOpen(false);
-    }, [location]);
 
     return (
         <header
@@ -113,6 +109,8 @@ export const Navbar: React.FC = () => {
                             onClick={() => setIsOpen(!isOpen)}
                             className="p-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white"
                             aria-label="Toggle navigation"
+                            aria-expanded={isOpen}
+                            aria-controls="mobile-nav-drawer"
                         >
                             {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
                         </button>
@@ -122,15 +120,20 @@ export const Navbar: React.FC = () => {
 
             {/* Mobile Drawer */}
             {isOpen && (
-                <div className="md:hidden bg-slate-950/98 border-b border-slate-800 px-4 pt-3 pb-6 space-y-2 mt-2">
+                <div
+                    id="mobile-nav-drawer"
+                    className="md:hidden bg-slate-950/98 border-b border-slate-800 px-4 pt-3 pb-6 space-y-2 mt-2"
+                >
                     <Link
                         to="/"
+                        onClick={() => setIsOpen(false)}
                         className="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-200 hover:bg-slate-900"
                     >
                         Home
                     </Link>
                     <Link
                         to="/privacy"
+                        onClick={() => setIsOpen(false)}
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-emerald-400 hover:bg-slate-900"
                     >
                         <FileText className="w-4 h-4" />
@@ -138,6 +141,7 @@ export const Navbar: React.FC = () => {
                     </Link>
                     <Link
                         to="/terms"
+                        onClick={() => setIsOpen(false)}
                         className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-semibold text-teal-400 hover:bg-slate-900"
                     >
                         <Scale className="w-4 h-4" />
