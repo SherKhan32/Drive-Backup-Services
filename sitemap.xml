@@ -3,26 +3,52 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    <!-- Application Home Page -->
     <url>
         <loc>https://sherkhan32.github.io/Drive-Backup-Services/</loc>
-        <lastmod>2026-10-01</lastmod>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
-    <!-- Application Privacy Policy -->
     <url>
-        <loc>https://sherkhan32.github.io/Drive-Backup-Services/privacy.html</loc>
-        <lastmod>2026-10-01</lastmod>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/architecture/</loc>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.90</priority>
     </url>
-    <!-- Application Terms of Service -->
     <url>
-        <loc>https://sherkhan32.github.io/Drive-Backup-Services/terms.html</loc>
-        <lastmod>2026-10-01</lastmod>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/security/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.90</priority>
+    </url>
+    <url>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/</loc>
+        <lastmod>2026-10-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
+    <url>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://sherkhan32.github.io/Drive-Backup-Services/contact/</loc>
+        <lastmod>2026-10-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.75</priority>
+    </url>
 </urlset>
-

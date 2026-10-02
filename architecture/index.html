@@ -7,18 +7,18 @@
         <meta name="theme-color" content="#090d16" />
         <meta name="google-site-verification" content="PKTCB_wefJ4NGLUbP2yTSKbPbNb-cr-IphWxAZlTtGA" />
 
-        <title id="route-title">Page Not Found | Drive Backup Services</title>
-        <meta name="description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
-        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:title" content="Page Not Found | Drive Backup Services" />
-        <meta property="og:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <title id="route-title">System Architecture &amp; Integration Diagram | Drive Backup Services</title>
+        <meta name="description" content="How Drive Backup Services connects desktop software to Google Drive: the three layers, the data path between them, and exactly who can see what at every stage." />
+        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/architecture/" />
+        <meta property="og:title" content="System Architecture &amp; Integration Diagram | Drive Backup Services" />
+        <meta property="og:description" content="How Drive Backup Services connects desktop software to Google Drive: the three layers, the data path between them, and exactly who can see what at every stage." />
         <meta property="og:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
-        <meta property="og:image:alt" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta name="twitter:title" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <meta property="og:image:alt" content="System Architecture &amp; Integration Diagram | Drive Backup Services" />
+        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/architecture/" />
+        <meta name="twitter:title" content="System Architecture &amp; Integration Diagram | Drive Backup Services" />
+        <meta name="twitter:description" content="How Drive Backup Services connects desktop software to Google Drive: the three layers, the data path between them, and exactly who can see what at every stage." />
         <meta name="twitter:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
 
         <meta name="author" content="Drive Backup Services" />
@@ -86,10 +86,33 @@
             <div id="static-fallback">
                 <nav><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></nav>
                 
-                <h1>This page does not exist</h1>
-                <p>The address you followed is not part of this site. Every page here has its own address, so try one of the destinations below.</p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/"><strong>Back to home page</strong></a></p>
+                <h1>System Architecture &amp; Integration Diagram</h1>
+                <p>How Drive Backup Services connects desktop software to Google Drive.</p>
+                <h2>Three layers, one straight path</h2>
+                <h3>Layer 01 &mdash; Desktop application layer</h3>
+                <p>Runs entirely on your computer. Business data lives in a local offline database on your own machine. It works with no internet connection for day-to-day use and produces a clean, point-in-time snapshot when a backup is due.</p>
+                <h3>Layer 02 &mdash; Drive Backup Services engine</h3>
+                <p>The backup layer inside the desktop app. It creates the local backup copy, encrypts it with AES-256 before any network activity, keeps the Google permission token in your operating system's credential vault, and uploads on the schedule you configure.</p>
+                <h3>Layer 03 &mdash; Your Google Drive layer</h3>
+                <p>Storage you already own and control. Encrypted snapshots are stored in your private folder <code>/DriveBackupServices/</code> inside your own Google account, and can be downloaded, shared, or deleted by you at any time.</p>
+                <h2>Data path</h2>
+                <ol>
+                    <li>Your desktop application writes business data to a local database.</li>
+                    <li>A point-in-time backup copy is created on your computer.</li>
+                    <li>The copy is encrypted with AES-256 on your machine.</li>
+                    <li>The encrypted file is uploaded directly from your computer to Google Drive.</li>
+                    <li>The snapshot is stored in <code>/DriveBackupServices/</code> in your account.</li>
+                </ol>
+                <h2>Who can see what</h2>
+                <ul>
+                    <li><strong>Your desktop application:</strong> your full local database.</li>
+                    <li><strong>Drive Backup Services:</strong> nothing. It is code, not a service. There is no server that receives your data.</li>
+                    <li><strong>Google Drive:</strong> only the encrypted backup files you created.</li>
+                    <li><strong>Any third party:</strong> nothing at all. There is no third-party hop in the path.</li>
+                </ul>
+                <h2>Connection used</h2>
+                <p><code>https://www.googleapis.com/auth/drive.file</code></p>
+                <p>Works on Windows, macOS and Linux desktops. An internet connection is needed only when a backup uploads or restores.</p>
                 <hr />
                 <p style="font-size:0.8rem;">Drive Backup Services &mdash; automatic encrypted Google Drive backup for desktop applications. Enquiries: <b>Contact with Administrator</b></p>
             </div>

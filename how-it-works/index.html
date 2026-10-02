@@ -7,18 +7,18 @@
         <meta name="theme-color" content="#090d16" />
         <meta name="google-site-verification" content="PKTCB_wefJ4NGLUbP2yTSKbPbNb-cr-IphWxAZlTtGA" />
 
-        <title id="route-title">Page Not Found | Drive Backup Services</title>
-        <meta name="description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
-        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:title" content="Page Not Found | Drive Backup Services" />
-        <meta property="og:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <title id="route-title">How Backup and Restore Work | Drive Backup Services</title>
+        <meta name="description" content="Drive Backup Services keeps a local backup of your desktop app data, uploads it automatically to your own Google Drive, and restores it in one click when you need it." />
+        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/" />
+        <meta property="og:title" content="How Backup and Restore Work | Drive Backup Services" />
+        <meta property="og:description" content="Drive Backup Services keeps a local backup of your desktop app data, uploads it automatically to your own Google Drive, and restores it in one click when you need it." />
         <meta property="og:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
-        <meta property="og:image:alt" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta name="twitter:title" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <meta property="og:image:alt" content="How Backup and Restore Work | Drive Backup Services" />
+        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/" />
+        <meta name="twitter:title" content="How Backup and Restore Work | Drive Backup Services" />
+        <meta name="twitter:description" content="Drive Backup Services keeps a local backup of your desktop app data, uploads it automatically to your own Google Drive, and restores it in one click when you need it." />
         <meta name="twitter:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
 
         <meta name="author" content="Drive Backup Services" />
@@ -86,10 +86,30 @@
             <div id="static-fallback">
                 <nav><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></nav>
                 
-                <h1>This page does not exist</h1>
-                <p>The address you followed is not part of this site. Every page here has its own address, so try one of the destinations below.</p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/"><strong>Back to home page</strong></a></p>
+                <h1>How Backup and Restore Work</h1>
+                <p>A local backup is created on your computer, uploaded automatically to your own Google Drive, and restored in one click when needed.</p>
+                <h2>Four stages of one backup</h2>
+                <ol>
+                    <li><strong>Local backup snapshot.</strong> The desktop software creates a clean point-in-time copy of the local database without interrupting operations.</li>
+                    <li><strong>AES-256 client encryption.</strong> The copy is compressed and encrypted on your local machine before any network transmission.</li>
+                    <li><strong>Direct Google handshake.</strong> Your computer talks straight to Google using the narrow <code>drive.file</code> permission. No relay server.</li>
+                    <li><strong>Safe storage.</strong> The encrypted backup is saved in your private Google Drive folder, ready to restore with one click.</li>
+                </ol>
+                <h2>Backup modes</h2>
+                <ul>
+                    <li><strong>Scheduled automatic backups:</strong> choose a daily or weekly time and the app creates and uploads a backup on its own.</li>
+                    <li><strong>One-click manual backup:</strong> useful before installing updates, changing hardware, or a busy trading day.</li>
+                    <li><strong>Version history:</strong> each run adds a new dated snapshot, so an earlier good state stays available.</li>
+                    <li><strong>Restore in one step:</strong> choose a snapshot from your Drive and the app rebuilds your database from it.</li>
+                </ul>
+                <h2>Everyday conditions</h2>
+                <ul>
+                    <li><strong>No internet:</strong> the local backup is still created; the encrypted upload waits and continues when the connection returns.</li>
+                    <li><strong>Offline operation:</strong> your desktop application keeps working exactly as before.</li>
+                    <li><strong>Your control:</strong> pause the schedule, disconnect Google Drive, or delete old snapshots directly from your own Drive at any time.</li>
+                </ul>
+                <h2>Where the backups live</h2>
+                <p>Your backups are stored in <code>My Drive/DriveBackupServices/</code> &mdash; your storage, your account, your Google settings.</p>
                 <hr />
                 <p style="font-size:0.8rem;">Drive Backup Services &mdash; automatic encrypted Google Drive backup for desktop applications. Enquiries: <b>Contact with Administrator</b></p>
             </div>

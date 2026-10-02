@@ -7,18 +7,18 @@
         <meta name="theme-color" content="#090d16" />
         <meta name="google-site-verification" content="PKTCB_wefJ4NGLUbP2yTSKbPbNb-cr-IphWxAZlTtGA" />
 
-        <title id="route-title">Page Not Found | Drive Backup Services</title>
-        <meta name="description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
-        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta property="og:title" content="Page Not Found | Drive Backup Services" />
-        <meta property="og:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <title id="route-title">Google Drive Access &amp; Permissions | Drive Backup Services</title>
+        <meta name="description" content="The exact Google Drive permission Drive Backup Services uses, what it allows, what it cannot reach, and how to switch it off whenever you want." />
+        <link rel="canonical" href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/" />
+        <meta property="og:title" content="Google Drive Access &amp; Permissions | Drive Backup Services" />
+        <meta property="og:description" content="The exact Google Drive permission Drive Backup Services uses, what it allows, what it cannot reach, and how to switch it off whenever you want." />
         <meta property="og:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
-        <meta property="og:image:alt" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/404/" />
-        <meta name="twitter:title" content="Page Not Found | Drive Backup Services" />
-        <meta name="twitter:description" content="The page you requested does not exist. Return to the Drive Backup Services home page or browse the architecture, backup, and security documentation." />
+        <meta property="og:image:alt" content="Google Drive Access &amp; Permissions | Drive Backup Services" />
+        <meta name="twitter:url" content="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/" />
+        <meta name="twitter:title" content="Google Drive Access &amp; Permissions | Drive Backup Services" />
+        <meta name="twitter:description" content="The exact Google Drive permission Drive Backup Services uses, what it allows, what it cannot reach, and how to switch it off whenever you want." />
         <meta name="twitter:image" content="https://sherkhan32.github.io/Drive-Backup-Services/images/hero-dashboard.jpg" />
 
         <meta name="author" content="Drive Backup Services" />
@@ -86,10 +86,39 @@
             <div id="static-fallback">
                 <nav><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></nav>
                 
-                <h1>This page does not exist</h1>
-                <p>The address you followed is not part of this site. Every page here has its own address, so try one of the destinations below.</p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/">Home</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/architecture/">System Architecture</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/how-it-works/">How Backup Works</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/security/">Encryption & Security</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/google-drive-access/">Google Drive Access</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/terms-of-service/">Terms of Service</a> &nbsp;|&nbsp; <a href="https://sherkhan32.github.io/Drive-Backup-Services/contact/">Contact & Support</a></p>
-                <p><a href="https://sherkhan32.github.io/Drive-Backup-Services/"><strong>Back to home page</strong></a></p>
+                <h1>Google Drive Access &amp; Permissions</h1>
+                <p>A Google permission is simply a list of doors an app may open. When an app requests Drive access, Google requires it to name the exact permission it needs, and you see that name on Google's consent screen before approving anything.</p>
+                <h2>The permission requested</h2>
+                <p><code>https://www.googleapis.com/auth/drive.file</code></p>
+                <p>Drive Backup Services needs to do exactly three things: put an encrypted backup in your Drive, list the backups it created, and take one back out when you restore. This single permission covers those three actions and nothing else. A larger full-Drive permission would also work, but it would hand the software the ability to read every document you own. A backup tool has no reason to ask for that, so it does not.</p>
+                <h2>What it allows</h2>
+                <ul>
+                    <li>Create a new backup folder in your Drive.</li>
+                    <li>Upload a new encrypted backup snapshot into that folder.</li>
+                    <li>List previously created snapshots so you can choose one.</li>
+                    <li>Download a snapshot you selected, in order to restore it.</li>
+                    <li>Replace or delete a snapshot that the application created.</li>
+                </ul>
+                <h2>What it cannot do</h2>
+                <ul>
+                    <li>Read, edit, or delete any file you did not back up.</li>
+                    <li>Access your photos, videos, or personal documents.</li>
+                    <li>Reach Gmail, Google Contacts, Calendar, or Chrome data.</li>
+                    <li>See files shared with you by other people.</li>
+                    <li>List the contents of your Drive outside the backup folder <code>/DriveBackupServices/</code>.</li>
+                </ul>
+                <h2>How the permission is granted</h2>
+                <ol>
+                    <li>You press Connect inside the desktop app. Nothing happens until you do.</li>
+                    <li>Google shows its own consent screen, served by Google, stating exactly what is being requested. Your password is typed into Google's page, never into our software.</li>
+                    <li>On approval, the authorization token is kept in your operating system's credential vault on your computer.</li>
+                </ol>
+                <h2>Turning it off</h2>
+                <ul>
+                    <li><strong>From inside the desktop app:</strong> open backup settings and choose Disconnect. Scheduled uploads stop, the stored token is cleared, and existing snapshots stay in your Drive.</li>
+                    <li><strong>From your Google Account:</strong> remove Drive Backup Services from your third-party access list at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account permissions</a>. Google revokes the permission on its side.</li>
+                </ul>
+                <p><strong>Drive Backup Services'</strong> use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer">Google API Services User Data Policy</a>, including the <strong>Limited Use</strong> requirements. The only permission requested is <code>https://www.googleapis.com/auth/drive.file</code>, which grants access solely to backup files the application created inside the user's own Google Drive account.</p>
                 <hr />
                 <p style="font-size:0.8rem;">Drive Backup Services &mdash; automatic encrypted Google Drive backup for desktop applications. Enquiries: <b>Contact with Administrator</b></p>
             </div>
