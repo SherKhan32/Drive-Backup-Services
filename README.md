@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# Drive Backup Services — Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing and compliance site for Drive Backup Services: a backup engine for offline
+desktop applications that uploads encrypted snapshots straight to the user's own
+Google Drive.
 
-Currently, two official plugins are available:
+React + TypeScript + Vite, styled with Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Commands
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev       # local dev server
+npm run build     # typecheck + build + generate per-page HTML
+npm run preview   # preview the production build
+npm run lint      # eslint
+npm run deploy    # build and push ./dist to GitHub Pages
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## URL structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The site is deployed to a GitHub Pages project subpath
+(`https://sherkhan32.github.io/Drive-Backup-Services/`), which does not support
+server-side rewrites. Every route therefore has its own **real, extensionless URL**
+with no `#` fragments and no in-page section jumps:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| URL                        | Page                     |
+| -------------------------- | ------------------------ |
+| `/`                        | Home                     |
+| `/architecture/`           | System Architecture      |
+| `/how-it-works/`           | How Backup Works         |
+| `/security/`               | Encryption & Data Protection |
+| `/google-drive-access/`    | Google Drive Access      |
+| `/privacy-policy/`         | Privacy Policy           |
+| `/terms-of-service/`       | Terms of Service         |
+| `/contact/`                | Contact & Support        |
 
-```
+### How the clean URLs work
+
+- `vite.config.ts` uses an absolute `base` so assets resolve at any depth.
+- `src/App.tsx` uses `BrowserRouter` with `basename = SITE_BASE`.
+- `scripts/generate-pages.mjs` runs after `vite build` and writes one
+  `dist/<route>/index.html` per route. Each generated file is the built
+  `index.html` with route-specific `<title>`, `description`, `canonical`, Open Graph
+  and Twitter tags, plus a `<noscript>` block containing the full static text of that
+  page (so crawlers and reviewers without JavaScript still get real content).
+- `dist/404.html` is generated the same way, so GitHub Pages serves the React
+  not-found page for unknown URLs.
+- Legacy `/privacy.html` and `/terms.html` are kept in `public/` as redirect stubs
+  to the new URLs.
+
+Route metadata (title, description, static fallback text) lives in
+`scripts/generate-pages.mjs`; shared runtime constants such as the Drive permission
+string live in `src/lib/site.ts`.
+
+## Editing content
+
+- Site-wide constants: `src/lib/site.ts`
+- Navigation and footer links: `src/components/Navbar.tsx`, `src/components/Footer.tsx`
+- Page content: `src/pages/*.tsx`
+- Architecture diagrams: `src/components/CloudEcosystemGraphic.tsx`,
+  `src/components/SecurityFlowDiagram.tsx`, `src/components/BackupFlowStrip.tsx`
+- The Google Drive permission card: `src/components/GoogleScopeCard.tsx`

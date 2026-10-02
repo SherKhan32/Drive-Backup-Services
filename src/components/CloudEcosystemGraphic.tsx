@@ -81,6 +81,13 @@ export const CloudEcosystemGraphic: React.FC = () => {
 
                             <div className="space-y-2 text-xs">
                                 <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
+                                    <Database className="w-4 h-4 text-emerald-400 shrink-0" />
+                                    <div>
+                                        <div className="font-semibold text-white">Local Backup Snapshot</div>
+                                        <div className="text-[10px] text-slate-400">Point-in-time copy kept on this computer</div>
+                                    </div>
+                                </div>
+                                <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
                                     <Lock className="w-4 h-4 text-emerald-400 shrink-0" />
                                     <div>
                                         <div className="font-semibold text-white">AES-256 Client Encryption</div>
@@ -95,10 +102,10 @@ export const CloudEcosystemGraphic: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-2.5">
-                                    <Database className="w-4 h-4 text-teal-400 shrink-0" />
+                                    <RefreshCw className="w-4 h-4 text-teal-400 shrink-0" />
                                     <div>
-                                        <div className="font-semibold text-white">1-Click / Scheduled Snapshots</div>
-                                        <div className="text-[10px] text-slate-400">Daily midnight automatic backup</div>
+                                        <div className="font-semibold text-white">Automatic Direct Upload</div>
+                                        <div className="text-[10px] text-slate-400">1-click or on your chosen schedule</div>
                                     </div>
                                 </div>
                             </div>
@@ -142,15 +149,15 @@ export const CloudEcosystemGraphic: React.FC = () => {
                 <div className="mt-8 pt-6 border-t border-slate-800/80 grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-300">
                     <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span><b>Zero Middleman:</b> Direct connection from desktop to Google.</span>
+                        <span><b>No Third Party:</b> your computer uploads straight to Google Drive.</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span><b>User Data Policy:</b> Full Limited Use compliance.</span>
+                        <span><b>Local Backup:</b> a copy is always kept on your own machine.</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                        <span><b>Revocation:</b> Disconnect anytime in desktop settings.</span>
+                        <span><b>Your Call:</b> disconnect or delete backups at any time.</span>
                     </div>
                 </div>
             </div>

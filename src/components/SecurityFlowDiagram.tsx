@@ -5,31 +5,31 @@ export const SecurityFlowDiagram: React.FC = () => {
     const steps = [
         {
             num: "01",
-            title: "Local Database Snapshot",
-            desc: "The desktop software creates a clean point-in-time snapshot of the local SQLite database without interrupting counter operations.",
+            title: "Local Backup Snapshot",
+            desc: "The desktop software creates a clean point-in-time copy of the local database on your computer, without interrupting counter operations.",
             icon: Database,
-            badge: "Offline PC",
+            badge: "On Your PC",
         },
         {
             num: "02",
             title: "AES-256 Client Encryption",
-            desc: "The database snapshot is compressed and encrypted on your local machine using industry-standard AES-256 encryption before any network transmission.",
+            desc: "The backup copy is compressed and encrypted on your local machine using industry-standard AES-256 encryption before any network transmission.",
             icon: Lock,
             badge: "Client-Side",
         },
         {
             num: "03",
-            title: "Direct Google OAuth Handshake",
-            desc: "The desktop app communicates directly with Google OAuth 2.0 endpoints using the narrow drive.file scope. Zero proxy servers.",
+            title: "Direct Google Handshake",
+            desc: "Your computer talks straight to Google using the narrow drive.file permission. No relay server, no third party in the path.",
             icon: KeyRound,
             badge: "OAuth 2.0",
         },
         {
             num: "04",
             title: "Safe Storage & Instant Restore",
-            desc: "The encrypted backup is saved into your private Google Drive account. You can restore your complete database with 1 click anytime.",
+            desc: "The encrypted backup is saved in your private Google Drive account. Restore your complete database with 1 click whenever you need it.",
             icon: Cloud,
-            badge: "Google Cloud",
+            badge: "Your Google Drive",
         },
     ];
 
